@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 const Navbar = () => {
   return (
-    <nav className="flex  justify-between items-center">
+    <nav className=" fixed flex w-full  z-3 justify-between items-center bg-gray-500">
       <div className='flex gap-2 items-center'>
         <img src="https://icons.iconarchive.com/icons/ionic/ionicons/128/menu-icon.png" className='h-5' alt="" />
       <img src="https://th.bing.com/th/id/R.b02b5d363a610229fe82e82ed0c369b4?rik=lECwiztO4NeaVA&pid=ImgRaw&r=0" className='h-13 ' alt="" />
@@ -10,7 +11,7 @@ const Navbar = () => {
 
 
       <div>
-         <input type="text" id='search-bar' className=' w-[min(30vw , 550px)] border-1 h-7 border-grey-700 rounded-full grow'  />
+         <input type="text" id='search-bar' className='min-w-[10vw] max-w-[150px] sm:max-w-[200px] md:max-w-[300px] lg:max-w-[400px] border h-7 border-gray-700 rounded-full grow'  />
          <label htmlFor="search-bar">search</label>
       </div>
 
